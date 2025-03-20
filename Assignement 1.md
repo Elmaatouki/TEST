@@ -17,6 +17,21 @@ El maatouki Mohamed
 
 # Les listes
 
+# Exercice
+
+l=[2,5,8,120,14,3,12,16,14,12,20,1]
+mois=["Jan","Fev","Mar","Avr","Mai","Juin","Juillet","Aout","Sep","Oct","Nov","Dec"]
+def argmax(l):
+    v,k=l[0], 0
+    for i,e in enumerate(l):
+        if e >v:
+            v=e
+            k=i
+    return  v,k
+   
+v,k=argmax(l)
+print("Max vente :", v, "------->", mois[k])
+
 ```{admonition} Définition
 
 Une liste est une collection ordonnée de valeurs.
